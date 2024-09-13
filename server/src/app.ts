@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv"
-
+import cors from "cors"
 import routes from './routes'
 
 dotenv.config();
@@ -10,6 +10,7 @@ const port = process.env.PORT_DEV || 3000;
 
 //Middleware for JSON parsing
 app.use(express.json());
+app.use(cors())
 
 
 //Database

@@ -35,7 +35,7 @@ export class SubscriptionService {
 
         foundSubscriber.subscriptionStatus = true;
         await foundSubscriber.save()
-
+        
         return foundSubscriber
     }
 
