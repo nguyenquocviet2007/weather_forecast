@@ -25,3 +25,4 @@ npm run dev
 
 ### Client side
 Do the same as Server side but do skip step 5
+Access localhost:5173 after start both server and client
