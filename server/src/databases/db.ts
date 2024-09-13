@@ -6,7 +6,7 @@ const {host, port, name} = config.db
 
 
 dotenv.config()
-const uri = `mongodb://${host}:${port}/${name}`;
+const uri = `mongodb+srv://nqviet:8rhZ057YVvUVgxls@cluster0.ycstm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 class Database {
     static instance: Database;
     constructor() {
