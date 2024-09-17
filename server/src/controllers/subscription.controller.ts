@@ -18,8 +18,8 @@ export class SubscriptionController {
         new SuccessResponse({
             message: 'Your subscription has been confirmed! You will receive daily weather information 7a.m',
             metadata: await SubscriptionService.confirmSubscription(email)
-        }).send(res.redirect('http://localhost:5173/'))
-        
+        })    
+        res.redirect('http://localhost:5173/')
     }
 
     unsubscribe = async (req: Request, res: Response, next: NextFunction) => {

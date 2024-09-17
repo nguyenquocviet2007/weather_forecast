@@ -34,6 +34,7 @@ function App() {
       })
       if (response.data.message === 'A Confirmation email has been send to email') {
         alert(response.data.message)
+        setShowForm(false)
       }
     } catch (error) {
       console.log(error)

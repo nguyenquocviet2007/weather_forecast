@@ -7,11 +7,13 @@ dotenv.config()
 
 export class EmailService {
     static transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-        port: 587,
+        service: 'Gmail',
+        host: 'smtp.gmail.email',
+        port: 465,
+        secure: true,
         auth: {
             user: process.env.EMAIL,
-            pass: process.env.EMAIL_PASSWORD
+            pass: process.env.APP_PASSWORD
         }
     })
     static async sendConfirmationEmail(email: string) {

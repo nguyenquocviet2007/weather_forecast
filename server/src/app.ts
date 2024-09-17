@@ -10,11 +10,7 @@ const port = process.env.PORT_DEV || 3000;
 
 //Middleware for JSON parsing
 app.use(express.json());
-app.use(cors({
-    origin: [""],
-    methods: ["POST", "GET"],
-    credentials: true
-}))
+app.use(cors())
 
 
 //Database
